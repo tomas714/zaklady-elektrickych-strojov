@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZES</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="links" href="../index.html">Domov</a>
+            <div class="dropdown-menu">
+               <button class="menu-btn">Cvičenia</button>
+               <div class="menu-content">
+                   <a class="links-hidden" href="01-lab.html">01. Úvod a BOZP</a>
+                   <a class="links-hidden" href="02-lab.html">02. Transformátor</a>
+                   <a class="links-hidden" href="03-lab.html">03. Meranie TR</a>
+                   <a class="links-hidden" href="04-lab.html">04. Synchrónny stroj</a>
+                   <a class="links-hidden" href="05-lab.html">05. Meranie SS</a>
+                   <a class="links-hidden" href="06-lab.html">06. Meranie SS</a>
+                   <a class="links-hidden" href="07-lab.html">07. Asynchrónny stroj</a>
+                   <a class="links-hidden" href="08-lab.html">08. Meranie AM</a>
+                   <a class="links-hidden" href="09-lab.html">09. Meranie AM</a>
+                   <a class="links-hidden" href="10-lab.html">10. Jednosmerný stroj</a>
+                   <a class="links-hidden" href="11-lab.html">11. Meranie JM</a>
+                   <a class="links-hidden" href="12-lab.html">12. Zápočet a dotazník</a>
+               </div>
+            </div>
+            <a class="links" href="../download.html">Na stiahnutie</a>
+        </nav>
+        <h1>02. Transfomrátor</h1>
+    </header>
+
+    <article>
+
+        <h2>
+            Ciele cvičenia
+        </h2>
+
+        <ul>
+            <li>Pochopiť princíp funkcčnosti transformátora</li>
+            <li>Pochopiť konštrukciu transformátora</li>
+            <li>Prepočítať príklady pre transformátor</li>
+        </ul>
+
+        <h2>
+            Čo je to transofmrátor?
+        </h2>
+
+        <p>
+            Transformátor je definovaný ako netočivý elektrický stroj pracujúci na princípe elektromagnetickej indukcie. Je určený na transformáciu striedavého vstupného napätia na jedno alebo viac výstupných napätí obyčajne rôznej napäťovej úrovne. Aj napriek rôznej napäťovej úrovni je frekvencia striedavého výstupného napätia rovnaká ako na vstupe. Transformátor sa skladá z dvoch, alebo viacerých vinutí uložených na spoločnom magnetickom obvode, ktorý je zložený z izolovaných plechov. Vstupné vinutie obvykle nazývame primárne a výstupné sekundárne. Ak máme viac výstupných napätí môžme ich nazvať terciálne atď.
+        </p>
+
+        <h2>
+            Princíp činnosti transformátora
+        </h2>
+
+        <p>
+            Primárne a sekundárne vinutie transformátora sú magneticky viazané vďaka magnetickému obvodu o veľmi malom magnetickom odpore (reluktancii). Malý magnetický odpor zaručuje zvýšenú koncentráciu magnetických siločiar v jadre. Ak je primárne vinutie napájané zo zdroja premenlivého prúdu, tak bude aj magnetický tok cirkulujúci v jadre premenlivý. Jeho amplitúda bude závisieť od počtu závitov primárneho vinutia \( N_1 \) a od veľkosti primárneho prúdu \( i_1 \). Vzájomný tok spájajúci obidve cievky indukuje v sekundárnom vinutí napätie úmerné počtu závitov sekundárneho vinutia \( N_2 \). Pripojenie záťaže na sekundárne vinutie spôsobí tok sekundárneho prúdu \( i_2 \).
+        </p>
+    
+        <p>
+            V tomto videu je uvedený vyššie opísaný princíp činnosti transformátora. Zobrazená je tiež konštrukcia trojfázového transformátora a princíp elektormagnetickej indukcie. 
+        </p>
+
+        <div class="video-container">   
+            <iframe class="video"
+                src="https://www.youtube.com/embed/vh_aCAHThTQ?si=Ug9tEyJJLxC7L6VQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen
+            ></iframe>
+        </div> 
+
+        <h3>
+            Ampérové pravidlo pravej ruky
+        </h3>
+
+        <p class="citation">
+            <em>"Ak palec pravej ruky ukazuje smer elektrického prúdu vo vodiči, potom pokrčené prsty ukazujú orientáciu magnetických indukčných čiar."</em>
+        </p>
+
+        <div class="figure">
+            <div class="figure-with-caption">
+                <img src = "../images/magnetic-induction-current-out.svg" alt="Prúd tecuci z obrazovky"/>
+                <p><em>Magnetická indukcia <br> Prúd tečúci z obrazovky</em></p>
+            </div>
+            <div class="figure-with-caption">
+                <img src = "../images/magnetic-induction-current-in.svg" alt="Prúd tecuci do obrazovky"/>
+                <p><em>Magnetická indukcia <br> Prúd tečúci do obrazovky</em></p>
+            </div>
+        </div>
+
+        
+
+        <h3>
+            Ampérové pravidlo pravej ruky pre cievku
+        </h3>
+
+        <p class="citation">
+            <em>"Ak cievku chitíme do pravej ruky tak, že ohnuté prsty ukazujú smer elektrického prúdu v jej závitoch, potom palec ukazuje smer magnetických indukčných čiar (severný pól cievky)"</em>
+        </p>
+
+        <div class="figure">
+            <div class="figure-with-caption">
+                <img src = "../images/magnetic-induction-solenoid.svg" alt="Magnetická indukcia v cievke"/>
+                <p><em>Magnetická indukcia v cievke</em></p>
+            </div>
+        </div>
+        
+
+        <h3>
+            Faradayov zákon
+        </h3>
+
+        <p>
+            Faradayov zákon indukvovaného elektromotorického napätia hovorí o tom, že indukované elektromotorické napätie \( \varepsilon \) vzniká všade tam, kde sa v čase \( t \) mení magnetický tok \( \phi \). 
+        </p>
+        
+        <p>
+            \[
+            \varepsilon = - \frac{\mathrm{d}\phi}{\mathrm{d}t}
+            \]
+        </p>
+        
+        <p>
+            Ak napríklad uložíme uzavretú vodivú slučku do premenného magnetického poľa a magnetický tok sa bude cez slučku meniť, potom vznikne v slučke indukované napätie. Ak je slučka uzavretá, potom toto napätie uvedie do pohybu voľné elektróny vo vodiči, čo znamená, že sa indukuje elektrický prúd.
+        </p>
+
+        <h2>
+            Prepočítané príklady
+        </h2>
+
+    </article>
+
+    <footer>
+        <p>Katedra elektrotechniky a mechatroniky &copy; 2024</p>
+    </footer>
+    </body>
+</html>
