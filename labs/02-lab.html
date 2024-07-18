@@ -35,7 +35,7 @@
             </div>
             <a class="links" href="../download.html">Na stiahnutie</a>
         </nav>
-        <h1>02. Transfomrátor</h1>
+        <h1>02. Transformátor</h1>
     </header>
 
     <article>
@@ -45,29 +45,18 @@
         </h2>
 
         <ul>
-            <li>Pochopiť princíp funkcčnosti transformátora</li>
-            <li>Pochopiť konštrukciu transformátora</li>
+            <li>Pochopiť princíp činnosti transformátora</li>
+            <li>Pochopiť kde vznikajú straty v transformátore</li>
+            <li>Pochopiť náhradnej schéme transformátora</li>
             <li>Prepočítať príklady pre transformátor</li>
         </ul>
 
         <h2>
-            Čo je to transofmrátor?
+            1. Čo je to transofmrátor?
         </h2>
 
         <p>
-            Transformátor je definovaný ako netočivý elektrický stroj pracujúci na princípe elektromagnetickej indukcie. Je určený na transformáciu striedavého vstupného napätia na jedno alebo viac výstupných napätí obyčajne rôznej napäťovej úrovne. Aj napriek rôznej napäťovej úrovni je frekvencia striedavého výstupného napätia rovnaká ako na vstupe. Transformátor sa skladá z dvoch, alebo viacerých vinutí uložených na spoločnom magnetickom obvode, ktorý je zložený z izolovaných plechov. Vstupné vinutie obvykle nazývame primárne a výstupné sekundárne. Ak máme viac výstupných napätí môžme ich nazvať terciálne atď.
-        </p>
-
-        <h2>
-            Princíp činnosti transformátora
-        </h2>
-
-        <p>
-            Primárne a sekundárne vinutie transformátora sú magneticky viazané vďaka magnetickému obvodu o veľmi malom magnetickom odpore (reluktancii). Malý magnetický odpor zaručuje zvýšenú koncentráciu magnetických siločiar v jadre. Ak je primárne vinutie napájané zo zdroja premenlivého prúdu, tak bude aj magnetický tok cirkulujúci v jadre premenlivý. Jeho amplitúda bude závisieť od počtu závitov primárneho vinutia \( N_1 \) a od veľkosti primárneho prúdu \( i_1 \). Vzájomný tok spájajúci obidve cievky indukuje v sekundárnom vinutí napätie úmerné počtu závitov sekundárneho vinutia \( N_2 \). Pripojenie záťaže na sekundárne vinutie spôsobí tok sekundárneho prúdu \( i_2 \).
-        </p>
-    
-        <p>
-            V tomto videu je uvedený vyššie opísaný princíp činnosti transformátora. Zobrazená je tiež konštrukcia trojfázového transformátora a princíp elektormagnetickej indukcie. 
+            Transformátor je definovaný ako netočivý elektrický stroj pracujúci na princípe elektromagnetickej indukcie. Je určený na transformáciu striedavého vstupného napätia na striedavé výstupné napäte obyčajne rôznej napäťovej úrovne. Aj napriek rôznej napäťovej úrovni je frekvencia výstupného napätia rovnaká ako na vstupe. Transformátor sa skladá z dvoch, alebo viacerých vinutí uložených na spoločnom magnetickom obvode. Vstupné vinutie obvykle nazývame primárne a výstupné sekundárne.
         </p>
 
         <div class="video-container">   
@@ -81,45 +70,147 @@
             ></iframe>
         </div> 
 
+        <h2>
+            2. Princíp činnosti transformátora
+        </h2>
+
+        <p>
+            Primárne a sekundárne vinutie transformátora sú magneticky viazané vďaka magnetickému obvodu o veľmi malom magnetickom odpore. Malý magnetický odpor zaručuje zvýšenú koncentráciu magnetických siločiar v jadre. Ak je primárne vinutie napájané zo zdroja premenlivého napätia, tak bude aj magnetický tok cirkulujúci v jadre premenlivý. Jeho amplitúda bude závisieť od počtu závitov primárneho vinutia \( N_1 \) a od veľkosti primárneho prúdu \( i_1 \). Vzájomný tok spájajúci obidve cievky indukuje v sekundárnom vinutí napätie úmerné počtu závitov sekundárneho vinutia \( N_2 \). Pripojenie záťaže na sekundárne vinutie spôsobí tok sekundárneho prúdu \( i_2 \).
+        </p>
+
+        <p>
+            Dobre myslím, že ste sa už vystrašili dosť. Tento predmet nebude o poučkách, aj ked ani tým sa nedá uplne vyhnúť. Cieľom bude pochopiť základným princípom a pospajať si v ich hlave tak aby ste ziskali predstavu o tom ako elektrické stroje fungujú. Tak teraz si to prejdeme ešte raz a po lopate.
+        </p>
+
         <h3>
-            Ampérové pravidlo pravej ruky
+            2.1 Ampérov zákon
         </h3>
+
+        <p>
+            Z elektrotechniky vieme, že pri prechode prúdu vodičom vzniká okolo vodiča magnetické pole, ktoré je možné opísať magnetickou indukciou. Tento fyzikálny jav medzi magnetickou indukciou a elektrickým prúdom opsiuje <strong>Ampérov zákon celkového prúdu</strong>, ktorého všeobecný vzťah pre istotu úvádzať nebudeme. Nám bude bohate stačit ak si uvedieme jeho upravenú verziu pre špeciálny prípad magnetickej idukcie v okolí dlhého priameho vodiča:
+
+            \[
+            B = \frac{\mu_0 I}{2 \pi r}
+            \]
+
+            Z tohto vzťahu vidíme, že magnetická indukcia \( B \) je priamo úmerná prúdu \( I \) a nepriamo úmerná vzdialenosti \( r \) od vodiča. To znamená, že ak bude vzdialenosť od vodiča konštantná a budeme zvyšovať prúd, magnetická indukcia bude rásť. Ak bude prúd konštantný a vzdialenosť od vodiča bude rásť, magnetická indukcia bude klesať.
+        </p>
+
+        <p>
+            Dobre, teraž už vieme určiť veľkosť magnetickej idnukcie v jednom bode. Avšak z fyzikálneho hľadiska je magnetická indukcia vektor, čiže má nielen veľkosť ale aj smer. Navyše magnetikcé indukciu možeme analyzovať v nekonečne veľa bodoch. Vznikajú tak otázky ako určiť smer magnetickej indukcie a ako ju zakresliť tak, aby sme si ju vedeli predstaviť.
+        </p>
+
+        <p>
+            Na určenie smeru vektora magnetickej induckie môžeme použiť <strong>ampérové pravidlo pravej ruky</strong>, ktoré znie nasledovne:
+        </p>
 
         <p class="citation">
             <em>"Ak palec pravej ruky ukazuje smer elektrického prúdu vo vodiči, potom pokrčené prsty ukazujú orientáciu magnetických indukčných čiar."</em>
         </p>
 
-        <div class="figure">
+        <p>
+            Čo sa týka zakreslenia magnetickej indukcie v priestore, môžeme sa pokúsiť do priestoru zakresliť nekonečne veľa bodov a šipiek, no povedzme si na rovinu nebolo by to veľmi šťastné a prehľadné riešenie. Dohodneme sa teda, že magnetické pole budeme kresliť pomocou siločiar, pričom v mieste, kde bude magnetická indukcia silnejšia budeme siločiary kresliť bližšie k sebe. Naopak v mieste, kde bude magnetická indukcia slabšia budeme siločiary kresliť viac od seba.
+        </p>
+
+        <p>
+            Výborne, teraž už vieme určiť veľkosť magnetickej indukcie jej smer a vieme zakresliť magnetické pole v okolí dlhého priameho vodiča. Posledná otázka je ako zakreslíme smer prúdu vo vodiči. Dohodneme sa, že vodič budeme kresliť v reze, tak že nám vznikne kruh a smer prúdu určíme na základe dvoch značiek. Prvá značka \( \odot \) bude znamenať, že prúd tečie smerom z obrazovky k nám a druhá značka \( \otimes \) bude znamenať, že prúd tečie smerom do obazovky od nás. Je to ako hádzanie šipiek. Ak hádžeme šipku do terča, šipka smeruje od nás a vidíme iba letku v tvare krížika. Ak by sme sa postavili pred terč a nejaký kamarát by hodil šipku do terča (prosím nerobte to) šipka smeruje k nám vidime iba hrot.
+        </p>
+
+        <div class="two-figures">
             <div class="figure-with-caption">
                 <img src = "../images/magnetic-induction-current-out.svg" alt="Prúd tecuci z obrazovky"/>
-                <p><em>Magnetická indukcia<br>(Prúd tečúci z obrazovky)</em></p>
+                <p><em>Indukcia magnetického poľa <br>(Prúd tečúci z obrazovky)</em></p>
             </div>
             <div class="figure-with-caption">
                 <img src = "../images/magnetic-induction-current-in.svg" alt="Prúd tecuci do obrazovky"/>
-                <p><em>Magnetická indukcia<br>(Prúd tečúci do obrazovky)</em></p>
+                <p><em>Indukcia magnetického poľa<br>(Prúd tečúci do obrazovky)</em></p>
             </div>
         </div>
 
-        
-
         <h3>
-            Ampérové pravidlo pravej ruky pre cievku
+            2.2 Ampérov zákon a solenoid
         </h3>
+
+        <p>
+            Z dlhého priameho vodiča si transformátor nevyrobíme. Zohnime teda tento rovný vodič do tvaru solenoidu. Áno je to iba iný názov pre cievku. Aký tvar bude mať magnetické pole v cievke? Poďme sa na to pozrieť.
+        </p>
+
+        <p>
+            Vezmime si teraz do úvahy najmenšiu stavebnú jednotku cievky, a to jeden závit. Závit má zvyčajne kuhový tvar. Predstavme si ho teraz v reze, čim dostaneme dva body jedného vodiča. V prvom bode tečie prúd od nás a v druhom k nám. Magnetické indukcie v týchto bodoch budú mať opačný smer, čo znamená, že magnetická idnukcia sa medzi prvým a druhým bodom vodiča sčíta a teda magnetické pole bude vo vnútri závitu silnejšie.
+        </p>
+
+        <p>
+            Magnetické pole cievky môžeme určiť z tvarov magnetických polí jednotlivých závitov. V prípade dostatočne dlhého a husto navinutého solenoidu sa polia od jednotlivých závitov sčítajú tak, že vo vnúti cievky dostaneme homogenné magnetické pole, tak ako to je zobrazené na orbázku.
+        </p>
+
+        <div class="one-figure">
+            <div class="figure-with-caption">
+                <img src = "../images/magnetic-induction-solenoid.svg" alt="Magnetické pole v cievke"/>
+                <p><em>Magnetické pole v cievke</em></p>
+            </div>
+        </div>
+
+        <p>
+            V skutočnosti magnetické pole v cievke nie je uplne homogénne ale to môžeme nateraz zanedbat. Upravme si teraz vzťah pre výpočet magnetickej indukcie tak aby sme vedeli vypočítať magnetickú indukciu vo vnuti cievky. Keďže magnetické pole v cievke považujeme za homogénne, t. j. magnetická indukcia je v každom bode rovnaká, môžeme povedať, že magnetická indukcia už viac nebude závislá od vzdialenosti \( r \). Nakoľko cievka je zložená z viacerých závitov a v každom závite vzniká magnetické pole, magnetická induckia bude úmerná počtu závitov na jednotku dĺžky \( n \) (inak povedané hustote závitov - napríklad 40 závitov na meter). Možeme teda napísať základý vzťah pre výpočet magnetickej indukcie v solenoide:
+            \[
+                B = \mu_0 n I
+            \]
+        </p>
+
+        <p>
+            Pre určenie smeru magnetickej idukcie v cievke môžeme použiť <strong>ampérové pravidlo pravej ruky pre cievku</strong>, ktoré znie nasledovne:
+        </p>
 
         <p class="citation">
             <em>"Ak cievku chitíme do pravej ruky tak, že ohnuté prsty ukazujú smer elektrického prúdu v jej závitoch, potom palec ukazuje smer magnetických indukčných čiar (severný pól cievky)"</em>
         </p>
 
-        <div class="figure">
+        <p>
+            Výborne! V tomto momente vieme ako funguje primárne a sekundárne vinutie tranformátora. Teraz by sme ich potrebovali nejako prepojiť. Transformátory majú výbornú vlastnosť galvanicky oddeliť primárnu a sekundárnu stranu. Inak povedané izolujú primárnu stranu od sekundárnej a naopak. Z toho vyplýva, že vinutia nebudú prepojené elektricky ale magneticky. Magnetický obvod je tvorený materálom s dobrou magnetickou vodivosťou. Sú to hlavne materiály zo železa a jeho zliatin. Tieto materiály sú známe aj ako <strong>feromagnetické látky</strong>.
+        </p>
+
+        <p>
+            Ak pridáme feromagnetické jadro do cievky magnetická indukcia sa mnohonásobne zväčší, nakoľko relatívna permeabilita \( \mu_\mathrm{r} \) feromagnetického jadra je omnoho väčšia ako permeabilita vákua \( \mu_0 \). Permeabilitu si môžeme predstaviť ako mieru schopnosti materiálu viesť magnetické pole. Len pre predstavu permeabilita vákua \( \mu_0 = 4\pi \cdot 10^{-7}\,\mathrm{H/m} \) a relatívna permeabilita feromagnetického jadra \( \mu_\mathrm{r} > 10^3\,\mathrm{H/m} \). Feromagnetický materiál tak funguje ako zosilňovač pre magnetickú indukciu. Aj tentoraz si upravíme vzorec pre výpočet magnetickej indukcie cievky s feromagnetickým jadrom. Keďže feromagnetický materiál funguje ako zosilňovač bude úmerný magnetickej induckii, a teda:
+            \[
+                B = \mu_0 \mu_\mathrm{r} n I
+            \]
+            Týmto sme zohľadnili vplyv feromagnetického materiálu na výsledú veľkosť magnetickej indukcie v cievke. Môžno sa teraz zamýšľate na tým, ako bude vyzerať magnetické pole cievky ak feromagnetický materiál dokáže oveľa lepšie viesť magnetické pole. Nuž väčšina magnetického poľa bude vtiahnutá do jadra. Tým pádom bude magnetické pole kopírovať tvar feromagnetického jadra, tak ako to je zobrazené na obrázku.
+        </p>
+
+
+        <div class="one-figure">
             <div class="figure-with-caption">
-                <img src = "../images/magnetic-induction-solenoid.svg" alt="Magnetická indukcia v cievke"/>
-                <p><em>Magnetická indukcia v cievke</em></p>
+                <img src = "../images/magnetic-induction-solenoid-with-core.svg" alt="Magnetické pole v cievke s jadrom"/>
+                <p><em>Magnetické pole v cievke s jadrom</em></p>
             </div>
         </div>
+
+        <p>
+            Doteraz sme sa točili okolo ampérovho zákona celkového prúdu, ktorý stanovuje väzbu medzi elektrickým prúdom a magnetickým poľom. Tento zákon formuloval v roku 1822 André Marie Ampère a jedná sa o magnetický ekvivalent Faradayovho indukčného zákona. Pred tým ako sa pozrieme na Faradayov indukčný zákon a dopravíme energiu na sekundárnu stranu sa ešte pozrieme na takzvaný <strong>magnetický tok</strong>.
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+        <h3>
+            2.3 Magnetický tok
+        </h3>
+
+        <p>
+            
+        </p>
         
 
         <h3>
-            Faradayov zákon
+            2.4 Faradayov indukčný zákon
         </h3>
 
         <p>
@@ -133,12 +224,185 @@
         </p>
         
         <p>
-            Ak napríklad uložíme uzavretú vodivú slučku do premenného magnetického poľa a magnetický tok sa bude cez slučku meniť, potom vznikne v slučke indukované napätie. Ak je slučka uzavretá, potom toto napätie uvedie do pohybu voľné elektróny vo vodiči, čo znamená, že sa indukuje elektrický prúd.
+            Ak napríklad uložíme uzavretú vodivú slučku do premenlivého homogenného magnetického poľa a magnetický tok sa bude cez slučku meniť, potom vznikne v slučke indukované napätie. Ak je slučka uzavretá, potom toto napätie uvedie do pohybu voľné elektróny vo vodiči, čo znamená, že sa indukuje elektrický prúd.
         </p>
 
+        <h3>
+            2.5 Napätie primárnej a sukundárnej strany
+        </h3>
+
+        <p>
+
+        </p>
+
+        <div class="one-figure">
+            <div class="figure-with-caption">
+                <img src = "../images/transformer-magnetic-flux.svg" alt="Napätie primárnej a sukundárnej strany"/>
+                <p><em>Napätie primárnej a sukundárnej strany</em></p>
+            </div>
+        </div>
+
+        <p>
+            \[ U_1 = \varepsilon_{11} + \varepsilon_{12} + \varepsilon_{13} + \varepsilon_{14} + \varepsilon_{15} \]
+            \[ U_1 = N_1 \varepsilon = N_1 \frac{\mathrm{d}\phi}{\mathrm{d}t} \]
+            \[ U_2 = \varepsilon_{21} + \varepsilon_{22} + \varepsilon_{23} + \varepsilon_{24} + \varepsilon_{25} \]
+            \[ U_2 = N_2 \varepsilon = N_2 \frac{\mathrm{d}\phi}{\mathrm{d}t} \]
+        </p>
+
+        <h3>
+            2.6 Prevod ideálneho transformátora
+        </h3>
+
         <h2>
-            Prepočítané príklady
+            3. Straty v transformátore
         </h2>
+
+        <h3>
+            3.1 Straty v medi
+        </h3>
+
+        <p>
+            Straty v medi \( \Delta P_\mathrm{Cu} \) vznikajú prechodom elektrického prúdu vinutím stroja. Veľkosť strát závisí od odporu vinutia a kvadrátu prechádzajúceho prúdu:
+            \[ \Delta P_\mathrm{Cu} = R I^2 \]
+            Vzniknuté teplo ohrieva vodiče. Teplota vodičov však nesmie prekročiť maximálnu dovolenú teplotu izolácie. V opačnom prípade hrozí jej poškodenie a vznik skratov. Elektrický stroj je navrhovaný na maximálnu hodnotu prúdu, pri prechode ktorého vinutím nedôjde k prehriatiu vodičov ani po nekonečne dlhej prevádzke stroja. Táto hodnota prúdu je udávaná na štítku stroja a nazýva sa nominálna hodnota prúdu. To isté platí aj o napätí.
+        </p>
+
+        <h3>
+            3.2 Straty v železe
+        </h3>
+
+        <p>
+            Straty v železe \( \Delta P_\mathrm{Fe} \) sú straty, ktoré vznikajú v magnetickom obvode stroja. Tieto sa delia na straty hysterézne \( \Delta P_\mathrm{h} \) a straty vírivými prúdmi \( \Delta P_\mathrm{v} \).
+        </p>
+        
+        <p>
+            <strong>Hysterézne straty</strong> vznikajú pri každom premagnetovaní, ktoré sú úmerné ploche hysteréznej slučky. Pretože straty vznikajú pri každom prechode hysteréznou slučkou, hysterézne straty sú závislé nielen od sýtenia materiálu, ale aj od frekvencie zmeny. Zníženie hysteréznych strát je možné použitím magnetických materiálov s čo najužšou hysteréznou slučkou.
+        </p>
+
+        <p>
+            <strong>Straty vírivými prúdmi</strong> vznikajú pri sýtení magnetického materiálu premenlivým magnetickým tokom. Pri sítení sa v ňom indukuje napätie. Toto je reakciou na zmenu magnetického poľa. Keďže magnetický materiál je elektricky vodivý, tak ním začnú pretekať prúdy, ktorým hovoríme vírivé prúdy. Obmedziť vírivé prúdu môžeme dvomi spôsobmi, a to skrátením ich dĺžky, tým že magnetický materiál bude vyrobený z elektricky izolovaných plechov, alebo zvýšením odporu feromagnetických plechov zvýšením obsahu kremíka.
+        </p>
+
+        <div class="two-figures">
+            <div class="figure-with-caption">
+                <img src = "../images/hysteresis-loop.svg" alt="Hysterézna slučka"/>
+                <p><em>Hysterézna slučka</em></p>
+            </div>
+            <div class="figure-with-caption">
+                <img src = "../images/eddy-current.svg" alt="Vírivé prúdy"/>
+                <p><em>Vírivé prúdy</em></p>
+            </div>
+        </div>
+
+        <p>
+            Výsledné straty v železe sú súčtom týchto strát.
+            \[ \Delta P_\mathrm{Fe} = \Delta P_\mathrm{h} + \Delta P_\mathrm{v} \]
+        </p>
+
+        <h3>
+            3.3 Vplyv rozptylovej indukčnosti na účinnosť
+        </h3>
+
+        <h3>
+            3.4 Vplyv magnetizačnej indukčnosti na účinnosť
+        </h3>
+
+        <h2>
+            4 Náhradná schéma transofrmátora
+        </h2>
+
+        <h3>
+            3.1 Stav naprázdno
+        </h3>
+
+        <h3>
+            3.2 Stav nakrátko
+        </h3>
+
+        <h2>
+            5. Prepočítané príklady
+        </h2>
+
+        <!-- 
+        <h3>
+            1. Príklad
+        </h3>
+        
+        <p>
+            Trojfázový transformátor má tieto štítkové údaje \( S_\mathrm{N} = 1600\,\mathrm{kVA} \), \( U_\mathrm{1N} = 22000\,\mathrm{V} \), \( U_\mathrm{2N} = 400\,\mathrm{V} \). Transformátor pracuje v zapojení <code>Dy1</code> má straty naprázdno \( \Delta P_0 = \Delta P_\mathrm{Fe} = 3600\,\mathrm{W} \), straty nakrátko \( \Delta P_\mathrm{k20 ^\circ C} = 14100\,\mathrm{W} \), straty vo vinutí \( \Delta P_\mathrm{j20 ^\circ C} = 13500\,\mathrm{W} \), napätie nakrátko \( u_\mathrm{k} = 6\,\mathrm{\%} \). Vypočítajte účinnosť transformátora, ak je zaťažený výkonom \( P = 1300\,\mathrm{kW} \) s \( \cos \phi = 0.8 \). 
+        </p>
+
+        <hr>
+        
+        <p>
+            <em>Rekapitulácia príkladu:</em>
+        </p>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td>\( P \) </td> 
+                <td> \( = 1300\,\mathrm{kW} \) </td>
+            </tr>
+            <tr>
+                <td>\( S_\mathrm{N} \) </td> 
+                <td>\( = 1600\,\mathrm{kVA} \)</td>
+            </tr>
+            <tr>
+                <td>\( U_\mathrm{1N} \)</td>
+                <td>\( = 22000\,\mathrm{V} \)</td>
+            </tr>
+            <tr>
+                <td>\( U_\mathrm{2N} \)</td>
+                <td>\( = 400\,\mathrm{V} \)</td>
+            </tr>
+            <tr>
+                <td>\( \Delta P_0 = \Delta P_\mathrm{Fe} \)</td>
+                <td>\( = 3600\,\mathrm{W} \)</td>
+            </tr>
+            <tr>
+                <td>\( \Delta P_\mathrm{k20 ^\circ C} \)</td>
+                <td>\( = 14100\,\mathrm{W} \)</td>
+            </tr>
+            <tr>
+                <td>\( \Delta P_\mathrm{j20 ^\circ C} \)</td>
+                <td>\( = 13500\,\mathrm{W} \)</td>
+            </tr>
+            <tr>
+                <td>\( \cos \phi \)</td>
+                <td>\( = 0.8 \)</td>
+            </tr>
+            <tr>
+                <td>\( u_\mathrm{k} \)</td>
+                <td>\( = 6\,\mathrm{\%} \)</td>
+            </tr>
+            <tr>
+                <td>\( \mu \)</td>
+                <td>\( = \mathrm{???} \, \% \)</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h3>
+            2. Príklad
+        </h3>
+
+        <h3>
+            3. Príklad
+        </h3> 
+        -->
+
+        <h2>Doplnkové zdroje</h2>
+
+        <ul>
+            <li><a class="resource-link" href="https://youtu.be/reavpQFwNw8?feature=shared">video</a> - <em>Amperovo pravidlo pravej ruky</em></li>
+            <li><a class="resource-link" href="https://youtu.be/KPpDUZNxe_c?feature=shared">video</a> - <em>Magnetická indukcia</em></li>
+            <li><a class="resource-link" href="https://youtu.be/PAtoBLBrtyk?feature=shared">video</a> - <em>Magnetický indukčný tok</em></li>
+            <li><a class="resource-link" href="https://youtu.be/MfWxwL31B7U?feature=shared">video</a> - <em>Prúd indukovaný vo vodiči</em></li>
+            <li><a class="resource-link" href="https://youtu.be/hJtMy73VyhM?feature=shared">video</a> - <em>Faradajov zákon elektromagnetickej indukcie</em></li>
+        </ul>
 
     </article>
 
